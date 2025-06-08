@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fab fa-youtube"></i> YouTube Downloader</h1>
+        <div class="input-container">
+            <input type="text" id="videoUrl" placeholder="Nhập URL video YouTube">
+            <button id="downloadBtn">
+                <i class="fas fa-download"></i> Tải xuống
+            </button>
+        </div>
+        <div class="format-container">
+            <select id="format">
+                <option value="mp4">MP4 Video</option>
+                <option value="mp3">MP3 Audio</option>
+            </select>
+        </div>
+        <div id="status" class="status"></div>
+        <div id="progress" class="progress-container">
+            <div class="progress-bar"></div>
+            <div class="progress-text">0%</div>
+        </div>
+        <div class="info-container">
+            <div class="info-item">
+                <i class="fas fa-info-circle"></i>
+                <span>Chọn MP4 để tải video chất lượng cao</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-music"></i>
+                <span>Chọn MP3 để tải audio chất lượng cao</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
